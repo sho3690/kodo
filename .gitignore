@@ -1,0 +1,12 @@
+# Health data never belongs in this repository
+*.zip
+export*.xml
+apple_health_export/
+書き出したデータ*
+
+.secrets/
+.env
+node_modules/
+preview/
+.DS_Store
+*.local.*

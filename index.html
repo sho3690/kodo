@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111417" media="(prefers-color-scheme: dark)">
+<title>KODO</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="KODO">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <a class="brand" href="#/summary" aria-label="KODO, go to summary">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h4.5l2.2-6 4 12.5 2.6-6.5H22"/></svg>
+      <span>KODO</span>
+    </a>
+    <a class="btn btn-secondary btn-sm" id="data-link" href="#/data" hidden>Data</a>
+  </header>
+  <nav class="tabs" id="tabs" aria-label="Sections" hidden>
+    <a href="#/summary" data-view="summary">Summary</a>
+    <a href="#/activity" data-view="activity">Activity</a>
+    <a href="#/heart" data-view="heart">Heart</a>
+    <a href="#/sleep" data-view="sleep">Sleep</a>
+    <a href="#/body" data-view="body">Body</a>
+  </nav>
+  <main id="main" tabindex="-1"></main>
+  <footer class="foot" id="foot" hidden>
+    <p>Your health data stays in this browser on this device. Nothing is uploaded.</p>
+    <p>KODO shows what your Apple Watch recorded. It is not a medical device and does not give medical advice.</p>
+  </footer>
+</div>
+<input type="file" id="file" class="visually-hidden" accept=".zip,.xml,application/zip,text/xml" tabindex="-1" aria-hidden="true">
+<noscript><p class="noscript">KODO needs JavaScript to read your Health export on this device.</p></noscript>
+</body>
+</html>
